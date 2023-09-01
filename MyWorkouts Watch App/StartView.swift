@@ -11,24 +11,37 @@ import HealthKit
 
 
 struct StartView: View {
+    @EnvironmentObject var workoutManager: WorkoutManager
     var workoutTypes: [HKWorkoutActivityType] = [.cycling, .running, .walking]
     
     var body: some View {
         List(workoutTypes) { workoutType in
-            NavigationLink(
-                workoutType.name,
-                destination:  SessionPagingView()
-            ).padding(
+//            NavigationLink(
+//                workoutType.name,
+//                destination:  SessionPagingView(),
+//                tag: workoutType,
+//                selection: $workoutManager.selectedWorkout
+//            )
+            
+            NavigationLink(workoutType.name) {
+                SessionPagingView()
+            }
+            
+            .padding(
                 EdgeInsets(top: 15, leading: 5, bottom: 15, trailing: 5)
             )
         }
         .listStyle(.carousel)
         .navigationBarTitle("Workouts")
+        .onAppear {
+            workoutManager.requestAuthorization()
+        }
     }
 }
 
 #Preview("StartView") {
     StartView()
+        .environmentObject(WorkoutManager())
 }
 
 

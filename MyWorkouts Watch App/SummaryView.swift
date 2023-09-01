@@ -73,6 +73,7 @@ struct SummaryView: View {
 
 #Preview("Summary View") {
     SummaryView()
+        .environmentObject(WorkoutManager())
 }
 
 struct SummaryMetricView: View {
