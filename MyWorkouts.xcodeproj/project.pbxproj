@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		F53860A52AA251EB005F1740 /* MyWorkoutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860A42AA251EB005F1740 /* MyWorkoutsApp.swift */; };
-		F53860A72AA251EB005F1740 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860A62AA251EB005F1740 /* ContentView.swift */; };
+		F53860A72AA251EB005F1740 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860A62AA251EB005F1740 /* StartView.swift */; };
 		F53860A92AA251EE005F1740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53860A82AA251EE005F1740 /* Assets.xcassets */; };
 		F53860AC2AA251EE005F1740 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53860AB2AA251EE005F1740 /* Preview Assets.xcassets */; };
 		F53860B62AA251EE005F1740 /* MyWorkouts_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860B52AA251EE005F1740 /* MyWorkouts_Watch_AppTests.swift */; };
 		F53860C02AA251EE005F1740 /* MyWorkouts_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860BF2AA251EE005F1740 /* MyWorkouts_Watch_AppUITests.swift */; };
 		F53860C22AA251EE005F1740 /* MyWorkouts_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860C12AA251EE005F1740 /* MyWorkouts_Watch_AppUITestsLaunchTests.swift */; };
+		F53860D22AA252F4005F1740 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860CE2AA252F3005F1740 /* ComplicationController.swift */; };
+		F53860D32AA252F4005F1740 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860CF2AA252F3005F1740 /* NotificationView.swift */; };
+		F53860D42AA252F4005F1740 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F53860D02AA252F3005F1740 /* PushNotificationPayload.apns */; };
+		F53860D52AA252F4005F1740 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860D12AA252F4005F1740 /* NotificationController.swift */; };
+		F53860D72AA25687005F1740 /* SessionPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860D62AA25687005F1740 /* SessionPagingView.swift */; };
+		F53860D92AA25967005F1740 /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860D82AA25967005F1740 /* MetricsView.swift */; };
+		F53860DB2AA26056005F1740 /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860DA2AA26056005F1740 /* ElapsedTimeView.swift */; };
+		F53860DD2AA26403005F1740 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860DC2AA26403005F1740 /* ControlsView.swift */; };
+		F53860DF2AA26576005F1740 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860DE2AA26576005F1740 /* SummaryView.swift */; };
+		F53860E12AA267F8005F1740 /* ActivityRingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860E02AA267F8005F1740 /* ActivityRingsView.swift */; };
+		F53860E32AA26C3E005F1740 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860E22AA26C3E005F1740 /* WorkoutManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,7 @@
 /* Begin PBXFileReference section */
 		F53860A12AA251EB005F1740 /* MyWorkouts Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyWorkouts Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53860A42AA251EB005F1740 /* MyWorkoutsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkoutsApp.swift; sourceTree = "<group>"; };
-		F53860A62AA251EB005F1740 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F53860A62AA251EB005F1740 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		F53860A82AA251EE005F1740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F53860AB2AA251EE005F1740 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F53860B12AA251EE005F1740 /* MyWorkouts Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyWorkouts Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +55,17 @@
 		F53860BB2AA251EE005F1740 /* MyWorkouts Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyWorkouts Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53860BF2AA251EE005F1740 /* MyWorkouts_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkouts_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		F53860C12AA251EE005F1740 /* MyWorkouts_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkouts_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F53860CE2AA252F3005F1740 /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F53860CF2AA252F3005F1740 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		F53860D02AA252F3005F1740 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F53860D12AA252F4005F1740 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F53860D62AA25687005F1740 /* SessionPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPagingView.swift; sourceTree = "<group>"; };
+		F53860D82AA25967005F1740 /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
+		F53860DA2AA26056005F1740 /* ElapsedTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeView.swift; sourceTree = "<group>"; };
+		F53860DC2AA26403005F1740 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		F53860DE2AA26576005F1740 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		F53860E02AA267F8005F1740 /* ActivityRingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingsView.swift; sourceTree = "<group>"; };
+		F53860E22AA26C3E005F1740 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +117,18 @@
 			isa = PBXGroup;
 			children = (
 				F53860A42AA251EB005F1740 /* MyWorkoutsApp.swift */,
-				F53860A62AA251EB005F1740 /* ContentView.swift */,
+				F53860A62AA251EB005F1740 /* StartView.swift */,
+				F53860DE2AA26576005F1740 /* SummaryView.swift */,
+				F53860E22AA26C3E005F1740 /* WorkoutManager.swift */,
+				F53860E02AA267F8005F1740 /* ActivityRingsView.swift */,
+				F53860D62AA25687005F1740 /* SessionPagingView.swift */,
+				F53860D82AA25967005F1740 /* MetricsView.swift */,
+				F53860DC2AA26403005F1740 /* ControlsView.swift */,
+				F53860DA2AA26056005F1740 /* ElapsedTimeView.swift */,
+				F53860CE2AA252F3005F1740 /* ComplicationController.swift */,
+				F53860D12AA252F4005F1740 /* NotificationController.swift */,
+				F53860CF2AA252F3005F1740 /* NotificationView.swift */,
+				F53860D02AA252F3005F1740 /* PushNotificationPayload.apns */,
 				F53860A82AA251EE005F1740 /* Assets.xcassets */,
 				F53860AA2AA251EE005F1740 /* Preview Content */,
 			);
@@ -233,6 +266,7 @@
 			files = (
 				F53860AC2AA251EE005F1740 /* Preview Assets.xcassets in Resources */,
 				F53860A92AA251EE005F1740 /* Assets.xcassets in Resources */,
+				F53860D42AA252F4005F1740 /* PushNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +291,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F53860A72AA251EB005F1740 /* ContentView.swift in Sources */,
+				F53860DB2AA26056005F1740 /* ElapsedTimeView.swift in Sources */,
+				F53860DD2AA26403005F1740 /* ControlsView.swift in Sources */,
+				F53860D52AA252F4005F1740 /* NotificationController.swift in Sources */,
+				F53860E12AA267F8005F1740 /* ActivityRingsView.swift in Sources */,
+				F53860D92AA25967005F1740 /* MetricsView.swift in Sources */,
+				F53860E32AA26C3E005F1740 /* WorkoutManager.swift in Sources */,
+				F53860A72AA251EB005F1740 /* StartView.swift in Sources */,
 				F53860A52AA251EB005F1740 /* MyWorkoutsApp.swift in Sources */,
+				F53860D22AA252F4005F1740 /* ComplicationController.swift in Sources */,
+				F53860DF2AA26576005F1740 /* SummaryView.swift in Sources */,
+				F53860D32AA252F4005F1740 /* NotificationView.swift in Sources */,
+				F53860D72AA25687005F1740 /* SessionPagingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
