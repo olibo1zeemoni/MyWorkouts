@@ -12,20 +12,24 @@ import HealthKit
 
 struct StartView: View {
     @EnvironmentObject var workoutManager: WorkoutManager
+    @Environment(\.isLuminanceReduced) var isLuminanceReduced
     var workoutTypes: [HKWorkoutActivityType] = [.cycling, .running, .walking]
     
     var body: some View {
         List(workoutTypes) { workoutType in
-//            NavigationLink(
-//                workoutType.name,
-//                destination:  SessionPagingView(),
-//                tag: workoutType,
-//                selection: $workoutManager.selectedWorkout
-//            )
+            NavigationLink(
+                workoutType.name,
+                destination:  SessionPagingView(),
+                tag: workoutType,
+                selection: $workoutManager.selectedWorkout
+            )
             
-            NavigationLink(workoutType.name) {
-                SessionPagingView()
-            }
+            
+            
+//            NavigationLink(workoutType.name, destination: {
+//                SessionPagingView()
+//                    isLuminanceReduced: _isLuminanceReduced, workoutManager: _workoutManager)
+//            })
             
             .padding(
                 EdgeInsets(top: 15, leading: 5, bottom: 15, trailing: 5)
@@ -63,3 +67,6 @@ extension HKWorkoutActivityType: Identifiable {
         }
     }
 }
+
+
+

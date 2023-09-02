@@ -25,6 +25,7 @@
 		F53860DF2AA26576005F1740 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860DE2AA26576005F1740 /* SummaryView.swift */; };
 		F53860E12AA267F8005F1740 /* ActivityRingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860E02AA267F8005F1740 /* ActivityRingsView.swift */; };
 		F53860E32AA26C3E005F1740 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53860E22AA26C3E005F1740 /* WorkoutManager.swift */; };
+		F58374382AA3A4A600046412 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58374372AA3A4A600046412 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		F53860E22AA26C3E005F1740 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 		F53860E42AA27A88005F1740 /* MyWorkouts Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MyWorkouts Watch App.entitlements"; sourceTree = "<group>"; };
 		F53860E52AA27AB3005F1740 /* MyWorkouts-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MyWorkouts-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F58374372AA3A4A600046412 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58374382AA3A4A600046412 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +105,7 @@
 				F53860B42AA251EE005F1740 /* MyWorkouts Watch AppTests */,
 				F53860BE2AA251EE005F1740 /* MyWorkouts Watch AppUITests */,
 				F53860A22AA251EB005F1740 /* Products */,
+				F58374362AA3A4A600046412 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +166,14 @@
 				F53860C12AA251EE005F1740 /* MyWorkouts_Watch_AppUITestsLaunchTests.swift */,
 			);
 			path = "MyWorkouts Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		F58374362AA3A4A600046412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F58374372AA3A4A600046412 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,6 +487,7 @@
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workouts tracked by MyWorkouts on Apple Watch will be saved to HealthKit.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,6 +522,7 @@
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workouts tracked by MyWorkouts on Apple Watch will be saved to HealthKit.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
