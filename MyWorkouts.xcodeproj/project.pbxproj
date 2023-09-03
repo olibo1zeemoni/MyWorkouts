@@ -83,10 +83,10 @@
 				F53860E42AA27A88005F1740 /* MyWorkouts Watch App.entitlements */,
 				F53860A42AA251EB005F1740 /* MyWorkoutsApp.swift */,
 				F53860A62AA251EB005F1740 /* StartView.swift */,
+				F53860D62AA25687005F1740 /* SessionPagingView.swift */,
 				F53860DE2AA26576005F1740 /* SummaryView.swift */,
 				F53860E22AA26C3E005F1740 /* WorkoutManager.swift */,
 				F53860E02AA267F8005F1740 /* ActivityRingsView.swift */,
-				F53860D62AA25687005F1740 /* SessionPagingView.swift */,
 				F53860D82AA25967005F1740 /* MetricsView.swift */,
 				F53860DC2AA26403005F1740 /* ControlsView.swift */,
 				F53860DA2AA26056005F1740 /* ElapsedTimeView.swift */,
@@ -350,7 +350,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -386,7 +386,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};

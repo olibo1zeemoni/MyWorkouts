@@ -23,18 +23,19 @@ struct SessionPagingView: View {
             MetricsView().tag(Tab.metrics)
             NowPlayingView().tag(Tab.nowPlaying)
         }
-        .navigationTitle(workoutManager.selectedWorkout?.name ?? "")
+        .navigationTitle(workoutManager.selectedWorkout?.name ?? "none")
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(selection == .nowPlaying)
-        .onChange(of: workoutManager.running) {  _ in
+        .onChange(of: workoutManager.running) {  _,_ in
             displayMetricsView()
         }
         .tabViewStyle(
             PageTabViewStyle(indexDisplayMode: isLuminanceReduced ? .never : .automatic)
         )
-        .onChange(of: isLuminanceReduced) { _ in
+        .onChange(of: isLuminanceReduced) { _,_ in
             displayMetricsView()
         }
+        
     }
 
         private func displayMetricsView() {

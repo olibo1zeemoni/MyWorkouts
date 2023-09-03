@@ -79,6 +79,9 @@ class WorkoutManager: NSObject, ObservableObject {
         // Request authorization for those quantity types.
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
             // Handle error.
+            if success {
+                print("$$$ Granted" + success.description)
+            }
         }
     }
     
