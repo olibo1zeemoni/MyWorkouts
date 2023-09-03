@@ -12,7 +12,6 @@ import HealthKit
 
 struct StartView: View {
     @EnvironmentObject var workoutManager: WorkoutManager
-    @Environment(\.isLuminanceReduced) var isLuminanceReduced
     var workoutTypes: [HKWorkoutActivityType] = [.cycling, .running, .walking]
     
     var body: some View {
@@ -23,18 +22,11 @@ struct StartView: View {
                 tag: workoutType,
                 selection: $workoutManager.selectedWorkout
             )
-            
-            
-            
-//            NavigationLink(workoutType.name, destination: {
-//                SessionPagingView()
-//                    isLuminanceReduced: _isLuminanceReduced, workoutManager: _workoutManager)
-//            })
+           }
             
             .padding(
                 EdgeInsets(top: 15, leading: 5, bottom: 15, trailing: 5)
             )
-        }
         .listStyle(.carousel)
         .navigationBarTitle("Workouts")
         .onAppear {

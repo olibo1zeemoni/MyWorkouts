@@ -26,13 +26,13 @@ struct SessionPagingView: View {
         .navigationTitle(workoutManager.selectedWorkout?.name ?? "")
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(selection == .nowPlaying)
-        .onChange(of: workoutManager.running) { _ , _ in
+        .onChange(of: workoutManager.running) {  _ in
             displayMetricsView()
         }
         .tabViewStyle(
             PageTabViewStyle(indexDisplayMode: isLuminanceReduced ? .never : .automatic)
         )
-        .onChange(of: isLuminanceReduced) { oldValue , newValue in
+        .onChange(of: isLuminanceReduced) { _ in
             displayMetricsView()
         }
     }
